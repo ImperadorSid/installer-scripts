@@ -11,4 +11,5 @@ code --install-extension ms-python.python
 code --install-extension pkief.material-icon-theme
 code --install-extension ritwickdey.liveserver
 code --install-extension skyapps.fish-vscode
+code --install-extension ms-vscode.cpptools
 
