@@ -2,8 +2,8 @@
 
 INSTALL_DIR=~/.local
 BASIC_TOOLS_PATH=$INSTALL_DIR/android-sdk/cmdline-tools
-CMDLINETOOLS_ARCHIVE=$(ls | grep command)
-FLUTTER_ARCHIVE=$(ls | grep flutter_linux)
+CMDLINETOOLS_ARCHIVE=command*
+FLUTTER_ARCHIVE=flutter_linux*
 USER_BIN_DIR=~/.local/bin
 
 mkdir -p $BASIC_TOOLS_PATH
