@@ -13,4 +13,5 @@ code --install-extension ms-vscode.cpptools
 code --install-extension pkief.material-icon-theme
 code --install-extension ritwickdey.liveserver
 code --install-extension skyapps.fish-vscode
+code --install-extension Angular.ng-template
 
