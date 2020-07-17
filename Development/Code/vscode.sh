@@ -7,7 +7,6 @@ VSCODE_PACKAGE=code*
 sudo apt install -y ./$VSCODE_PACKAGE
 code --install-extension Dart-Code.flutter
 code --install-extension dracula-theme.theme-dracula
-code --install-extension eg2.vscode-npm-script
 code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
 code --install-extension pkief.material-icon-theme
