@@ -11,3 +11,6 @@ CUR_PATH=$(fish -c 'echo $fish_user_paths')
 NODE_BIN=/home/impsid/.local/node/bin
 [[ "$CUR_PATH" != *"$NODE_BIN"* ]] && fish -c "set -p fish_user_paths $NODE_BIN"
 
+PATH=$NODE_BIN:$PATH
+$NODE_BIN/npm i -g $(cat packages.txt)
+
