@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-curl -L https://deb.nodesource.com/setup_14.x | sudo -E bash -
-sudo apt install -y nodejs
+rm -f node*z
+LATEST_VERSION=$(curl -s https://nodejs.org/dist/index.json | jq -r '.[0].version')
 
-sudo npm install -g @angular/cli
+aria2c "https://nodejs.org/dist/latest/node-$LATEST_VERSION-linux-x64.tar.xz"
+
+tar xvf node-$LATEST_VERSION-linux-x64.tar.xz -C ~/.local --one-top-level=node --strip-components=1
+
+CUR_PATH=$(fish -c 'echo $fish_user_paths')
+NODE_BIN=/home/impsid/.local/node/bin
+[[ "$CUR_PATH" != *"$NODE_BIN"* ]] && fish -c "set -p fish_user_paths $NODE_BIN"
+
