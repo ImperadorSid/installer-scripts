@@ -1,3 +1,4 @@
 @angular/cli
+all-the-package-names
 sass
 typescript
