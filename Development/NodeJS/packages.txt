@@ -1,4 +1,7 @@
 @angular/cli
 all-the-package-names
+express
+morgan
+nodemon
 sass
 typescript
