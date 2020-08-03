@@ -1,5 +1,5 @@
 alacritty
 bat
-fd
+fd-find
 lsd
 ripgrep
