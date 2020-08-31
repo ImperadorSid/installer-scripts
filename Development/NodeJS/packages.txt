@@ -2,4 +2,5 @@
 all-the-package-names
 nodemon
 sass
+ts-node-dev
 typescript

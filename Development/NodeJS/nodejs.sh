@@ -18,4 +18,6 @@ CUR_PATH=$(fish -c 'echo $fish_user_paths')
 PATH=$NODE_BIN:$PATH
 $NODE_BIN/npm install --global yarn
 $NODE_BIN/yarn global add $(cat packages.txt)
+$NODE_BIN/yarn config set init-author-name 'Moisés Carvalho' -g
+$NODE_BIN/yarn config set init-author-email 'moisescarv27@hotmail.com' -g
 
