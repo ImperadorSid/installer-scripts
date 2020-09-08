@@ -1,0 +1,8 @@
+Angular.ng-template
+dbaeumer.vscode-eslint 
+dracula-theme.theme-dracula
+eamodio.gitlens
+ms-vsliveshare.vsliveshare
+pkief.material-icon-theme
+ritwickdey.liveserver
+skyapps.fish-vscode
