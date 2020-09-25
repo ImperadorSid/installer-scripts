@@ -1,6 +1,7 @@
 @angular/cli
 all-the-package-names
 eslint
+mongo-hacker
 nodemon
 sass
 ts-node-dev
