@@ -7,7 +7,7 @@ CARGO_BIN=~/.cargo/bin
 [[ "$CUR_PATH" != *"$CARGO_BIN"* ]] && fish -c "set -p fish_user_paths $CARGO_BIN"
 
 # Prerequisites for "alacritty"
-apt install cmake libfontconfig-dev libxcb-{render,shape,xfixes}0-dev
+sudo apt install cmake libfontconfig-dev libxcb-{render,shape,xfixes}0-dev
 
 $CARGO_BIN/cargo install $(cat packages.txt)
 
