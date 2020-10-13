@@ -1,7 +1,7 @@
 Angular.ng-template
+christian-kohler.path-intellisense
 dbaeumer.vscode-eslint 
 dracula-theme.theme-dracula
-eamodio.gitlens
 ms-vsliveshare.vsliveshare
 pkief.material-icon-theme
 ritwickdey.liveserver
