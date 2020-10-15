@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-INSTALL_DIR=~/.local
-BASIC_TOOLS_PATH=$INSTALL_DIR/android-sdk/cmdline-tools
+SDK_HOME=~/.local/android-sdk
+INSTALL_PATH=$SDK_HOME/cmdline-tools
 CMDLINETOOLS_ARCHIVE=command*
-USER_BIN_DIR=~/.local/bin
 
-mkdir -p $BASIC_TOOLS_PATH
+mkdir -p $INSTALL_PATH
 
-unzip $CMDLINETOOLS_ARCHIVE -d $BASIC_TOOLS_PATH
-mv $BASIC_TOOLS_PATH/tools $BASIC_TOOLS_PATH/latest
+unzip $CMDLINETOOLS_ARCHIVE -d $INSTALL_PATH
 
-ln -s ~/.local/android-sdk/platform-tools/adb $USER_BIN_DIR
-ln -s ~/.local/android-sdk/cmdline-tools/latest/bin/sdkmanager $USER_BIN_DIR
+ln -s $INSTALL_PATH/tools/bin/sdkmanager ~/.local/bin
+ln -s $INSTALL_PATH/tools/bin/avdmanager ~/.local/bin
+ln -s $SDK_HOME/emulator/emulator ~/.local/bin
 
-$BASIC_TOOLS_PATH/latest/bin/sdkmanager "build-tools;30.0.2" "emulator" "platform-tools" "platforms;android-30" "system-images;android-30;google_apis;x86"
+$INSTALL_PATH/tools/bin/sdkmanager "emulator" "system-images;android-30;google_apis;x86"
+
