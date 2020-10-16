@@ -1,18 +1,21 @@
 #!/usr/bin/env bash
 
 SDK_HOME=~/.local/android-sdk
-CLI_PATH=$SDK_HOME/cmdline-tools
-CMDLINETOOLS_ARCHIVE=command*
+CMDLINE_ARCHIVE=command*
+CMDLINE_ROOT=$SDK_HOME/cmdline-tools
+CMDLINE_BIN_PATH=$SDK_HOME/cmdline-tools/latest/bin
 
-mkdir -p $CLI_PATH
+mkdir -p $CMDLINE_ROOT
 
-unzip $CMDLINETOOLS_ARCHIVE -d $CLI_PATH
+unzip -q $CMDLINE_ARCHIVE -d $CMDLINE_ROOT
+mv $CMDLINE_ROOT/{cmdline-tools,latest}
 
-ln -sf $CLI_PATH/tools/bin/sdkmanager ~/.local/bin
-ln -sf $CLI_PATH/tools/bin/avdmanager ~/.local/bin
+ln -sf $CMDLINE_BIN_PATH/sdkmanager ~/.local/bin
+ln -sf $CMDLINE_BIN_PATH/avdmanager ~/.local/bin
 ln -sf $SDK_HOME/emulator/emulator ~/.local/bin
 ln -sf $SDK_HOME/platform-tools/adb ~/.local/bin
 
-$CLI_PATH/tools/bin/sdkmanager "emulator" "system-images;android-30;google_apis;x86" "platform-tools"
-mkdir -p $SDK_HOME/platforms
+cp -r additional/. $SDK_HOME
+
+$CMDLINE_BIN_PATH/sdkmanager "emulator" "system-images;android-30;google_apis_playstore;x86" "platform-tools"
 
