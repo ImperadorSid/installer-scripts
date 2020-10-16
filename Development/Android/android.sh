@@ -17,5 +17,5 @@ ln -sf $SDK_HOME/platform-tools/adb ~/.local/bin
 
 cp -r additional/. $SDK_HOME
 
-$CMDLINE_BIN_PATH/sdkmanager "emulator" "system-images;android-30;google_apis_playstore;x86" "platform-tools"
+$CMDLINE_BIN_PATH/sdkmanager "emulator" "platform-tools" "system-images;android-30;google_apis_playstore;x86"
 
