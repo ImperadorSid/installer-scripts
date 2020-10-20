@@ -1,9 +1,10 @@
 Angular.ng-template
-christian-kohler.path-intellisense
 dbaeumer.vscode-eslint 
 dracula-theme.theme-dracula
+kamikillerto.vscode-colorize
 ms-vsliveshare.vsliveshare
-naumovs.color-highlight
 pkief.material-icon-theme
 ritwickdey.liveserver
 skyapps.fish-vscode
+tabnine.tabnine-vscode
+
