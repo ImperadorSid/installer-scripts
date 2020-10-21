@@ -5,6 +5,6 @@ kamikillerto.vscode-colorize
 ms-vsliveshare.vsliveshare
 pkief.material-icon-theme
 ritwickdey.liveserver
-skyapps.fish-vscode
+humao.rest-client
 tabnine.tabnine-vscode
 
