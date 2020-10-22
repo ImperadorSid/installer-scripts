@@ -7,7 +7,7 @@ YARN_BIN=~/.yarn/bin
 rm -rf node*z $NODE_ROOT ~/.npm ~/.{,{cache,config}/}yarn*
 
 LATEST_VERSION=$(curl -s https://nodejs.org/dist/index.json | jq -r '.[0].version')
-aria2c "https://nodejs.org/dist/latest/node-$LATEST_VERSION-linux-x64.tar.xz"
+aria2c "https://nodejs.org/dist/latest/node-$LATEST_VERSION-linux-x64.tar.xz" -d .
 
 tar xvf node-$LATEST_VERSION-linux-x64.tar.xz -C ~/.local --one-top-level=node --strip-components=1
 

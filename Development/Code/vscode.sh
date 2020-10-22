@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 rm -f code*
-aria2c "https://update.code.visualstudio.com/latest/linux-deb-x64/stable"
+aria2c "https://update.code.visualstudio.com/latest/linux-deb-x64/stable" -d .
 VSCODE_PACKAGE=code*
 
 sudo apt install -y ./$VSCODE_PACKAGE
