@@ -6,10 +6,11 @@ YARN_BIN=~/.yarn/bin
 
 rm -rf node*z $NODE_ROOT ~/.npm ~/.{,{cache,config}/}yarn*
 
-LATEST_VERSION=$(curl -s https://nodejs.org/dist/index.json | jq -r '.[0].version')
-aria2c "https://nodejs.org/dist/latest/node-$LATEST_VERSION-linux-x64.tar.xz" -d .
+VERSION=$(curl -s https://nodejs.org/dist/index.json | jq -r '.[0].version')
+[[ -n "$@" ]] && VERSION=$1
 
-tar xvf node-$LATEST_VERSION-linux-x64.tar.xz -C ~/.local --one-top-level=node --strip-components=1
+aria2c "https://nodejs.org/dist/$VERSION/node-$VERSION-linux-x64.tar.xz" -d .
+tar xvf node-$VERSION-linux-x64.tar.xz -C ~/.local --one-top-level=node --strip-components=1
 
 CUR_PATH=$(fish -c 'echo $fish_user_paths')
 [[ "$CUR_PATH" != *"$NODE_BIN"* ]] && fish -c "set -p fish_user_paths $NODE_BIN"
