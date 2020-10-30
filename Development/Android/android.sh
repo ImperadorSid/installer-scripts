@@ -17,5 +17,5 @@ ln -sf $SDK_HOME/platform-tools/adb ~/.local/bin
 
 cp -r additional/. $SDK_HOME
 
-$CMDLINE_BIN_PATH/sdkmanager "platform-tools" "system-images;android-30;google_apis_playstore;x86"
+$CMDLINE_BIN_PATH/sdkmanager  "build-tools;28.0.3" "platforms;android-29" "system-images;android-30;google_apis_playstore;x86"
 
