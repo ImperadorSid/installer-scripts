@@ -3,3 +3,4 @@
 all-the-package-names
 mongo-hacker
 nodemon
+react-native-cli
