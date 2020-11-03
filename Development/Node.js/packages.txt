@@ -1,0 +1,7 @@
+@angular/cli
+@nestjs/cli
+all-the-package-names
+create-react-app
+mongo-hacker
+nodemon
+react-native-cli

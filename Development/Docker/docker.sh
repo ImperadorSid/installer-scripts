@@ -6,3 +6,8 @@ sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/u
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io
 
+for I in $(cat images.txt)
+do
+  sudo docker pull $I
+done
+
