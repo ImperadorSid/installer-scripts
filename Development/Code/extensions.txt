@@ -1,10 +1,9 @@
 Angular.ng-template
 dbaeumer.vscode-eslint 
 dracula-theme.theme-dracula
-humao.rest-client
+jpoissonnier.vscode-styled-components
 kamikillerto.vscode-colorize
 ms-vsliveshare.vsliveshare
 pkief.material-icon-theme
 ritwickdey.liveserver
-tabnine.tabnine-vscode
 
