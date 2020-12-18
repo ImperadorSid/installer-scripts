@@ -1,0 +1,4 @@
+@angular/cli
+@nestjs/cli
+all-the-package-names
+nodemon

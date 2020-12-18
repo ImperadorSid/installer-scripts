@@ -1,6 +1,0 @@
-@angular/cli
-@nestjs/cli
-all-the-package-names
-create-react-app
-nodemon
-react-native-cli
