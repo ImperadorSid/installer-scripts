@@ -7,4 +7,3 @@ cargo install alacritty
 sudo apt purge -y {gnome,mate}-terminal
 sudo ln -sf ~/.local/scripts/alacritty-wrapper.fish /usr/bin/gnome-terminal
 sudo ln -sf ~/.local/scripts/alacritty-wrapper.fish /usr/bin/mate-terminal
-
